@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "ScanbotBarcodeSDKNativeWrapper",
     platforms: [
-        .iOS("15.6")
+        .iOS(.v15)
     ],
     products: [
         .library(name: "ScanbotBarcodeSDKWrapper", targets: ["ScanbotBarcodeSDKWrapper"]),
@@ -13,13 +13,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ScanbotBarcodeSDKWrapper",
-            url: "https://doo-download-new.s3.eu-west-1.amazonaws.com/sdk/barcode-sdk-wrapper/ios/xcframework/scanbot-barcode-sdk-wrapper-xcframework-10.0.0.zip",
-            checksum: "9b4584f506b8e119d5c2f145b1e3ab41107ab7bf0bd2c56a80adf9c47f169d9e"
+            url: "https://download.scanbot.io/sdk/barcode-sdk-wrapper/ios/xcframework/scanbot-barcode-sdk-wrapper-xcframework-10.0.1.zip",
+            checksum: "0f40470e40b91940044ae536c789e1573bf8da0c120364bfe120951957da9731"
         ),
         .binaryTarget(
             name: "ScanbotBarcodeScannerSDK",
-            url: "https://download.scanbot.io/barcode-scanner-sdk/ios/pre/xcframeworks/RC10/scanbot-ios-barcode-scanner-sdk-xcframework-10.0.0.zip",
-            checksum: "bd7c97d021f38173b9592fd586bbe587eaf505e673c68c843852578b65fbedcf"
+            url: "https://download.scanbot.io/barcode-scanner-sdk/ios/pre/xcframeworks/RC11/scanbot-ios-barcode-scanner-sdk-xcframework-10.0.0.zip",
+            checksum: "2a3193d2004acc8f29dc07616863434e65bd5148f7dc17ed801b7435ff3b0857"
         )
     ]
 )
